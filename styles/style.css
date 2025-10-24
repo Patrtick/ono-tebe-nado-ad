@@ -1,18 +1,21 @@
-/* место для вашего кода */
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0;
-  font-family: Raleway, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .h1 {
   font-size: 100px;
-  font-weight: 700;
-  line-height: 114.999999999999999999%;
+  font-weight: bold;
+  line-height: 1.15;
   letter-spacing: 0.3em;
 }
 
@@ -20,7 +23,7 @@ body {
   width: 1100px;
   min-height: 293px;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
 
@@ -43,17 +46,17 @@ body {
 .header_links-list {
   display: flex;
   gap: 29px;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0em;
+  line-height: 1;
+  letter-spacing: 0;
   list-style: none;
   margin: 0;
   padding: 135px 0 140px 50px;
 }
 
 .header_links-list-item {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
   padding-left: 0;
   margin-left: 0;
@@ -80,11 +83,11 @@ body {
 
 .address {
   list-style: none;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 .address_link {
@@ -97,7 +100,7 @@ body {
   width: 1100px;
   min-height: 757px;
   background-image: url(../images/cover.jpg);
-  background-position: center top;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
@@ -105,7 +108,7 @@ body {
 }
 
 .overlay {
-  background-color: rgb(0 0 0 / 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
 }
 
@@ -133,20 +136,19 @@ body {
 
 .cover_description {
   width: 1000px;
-  align-items: center;
-  margin: 96px 50px 50px 50px;
-  justify-content: space-between;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 96px 50px 50px 50px;
 }
 
 .cover_description-text {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   line-height: 28px;
   color: white;
-  justify-content: space-between;
   text-transform: uppercase;
   word-spacing: 19px;
 }
@@ -154,9 +156,11 @@ body {
 .cover_button {
   font-size: 22px;
   font-weight: 500;
-  line-height: 100%;
+  line-height: 1;
   text-transform: uppercase;
+  display: flex;
   align-items: center;
+  justify-content: center;
   width: 256px;
   height: 51px;
   border: 1px solid white;
@@ -171,10 +175,9 @@ body {
 }
 
 .lots_title {
-  font-style: bold;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   margin-left: 40px;
   text-transform: uppercase;
   margin-bottom: 26.5px;
@@ -185,6 +188,8 @@ body {
   flex-direction: row;
   gap: 25px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .lots_card-list-item {
@@ -200,15 +205,14 @@ body {
   justify-content: space-between;
   height: 100%;
   box-sizing: border-box;
-  padding: 48px 40px 48px 40px;
+  padding: 48px 40px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .card_title {
-  font-weight: 700;
-  font-style: bold;
+  font-weight: bold;
   font-size: 22px;
   line-height: 1.2;
   margin: 0;
@@ -220,7 +224,7 @@ body {
 }
 
 .card_text {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
   color: white;
@@ -239,13 +243,13 @@ body {
 }
 
 .lots_look-more-link {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   display: block;
   text-transform: lowercase;
   text-decoration: underline;
-  line-height: 100%;
-  letter-spacing: 0em;
+  line-height: 1;
+  letter-spacing: 0;
   padding-left: 40px;
   margin: 33px auto 0;
   text-underline-offset: 4px;
@@ -277,20 +281,19 @@ body {
 }
 
 .about_title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0em;
+  line-height: 1;
+  letter-spacing: 0;
   text-transform: uppercase;
-  font-style: bold;
   margin: 3px 402px 103px 0;
 }
 
 .about_text {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
 }
 
 .about_text-margin {
@@ -317,10 +320,10 @@ body {
 }
 
 .footer_menu {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 100%;
-  letter-spacing: 0em;
+  line-height: 1;
+  letter-spacing: 0;
   padding-top: 1px;
   padding-bottom: 115px;
   text-align: center;
@@ -332,10 +335,12 @@ body {
   flex-direction: column;
   list-style: none;
   gap: 4px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer_link {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
 }
 
